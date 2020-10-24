@@ -1,0 +1,8 @@
+@import "utils/colors";
+
+$button-outset-shadow: 4px 3px 7px -5px;
+$button-inset-shadow-top: inset 0 10px 18px -15px;
+$button-inset-shadow-bottom: inset 0 -10px 18px -15px;
+
+$button-shadow: $button-outset-shadow, $button-inset-shadow-top $color-inset-shadow, $button-inset-shadow-bottom $color-inset-shadow;
+$button-focus-shadow: $button-outset-shadow, $button-inset-shadow-top $color-inset-shadow-focus, $button-inset-shadow-bottom $color-inset-shadow-focus;

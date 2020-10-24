@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading products-header">
+    <h3 class="panel-title">Wybór Produktów</h3>
+    <span class="glyphicon glyphicon-chevron-up header-icon"
+          [class.open]="isOpen" [class.closed]="!isOpen" (click)="isOpen = !isOpen">
+    </span>
+  </div>
+  <div class="panel-body" [@openClose]="isOpen ? 'open' : 'closed'">
+    <div class="panel-body-container">
+      <div class="products-container">
+        <button class="btn btn-default product-button"
+                *ngFor="let product of products"
+                [class.active]="isActive(product)"
+                (click)="selectProduct(product)">
+          <div class="info-icon glyphicon glyphicon-question-sign">
+            <div class="alert alert-info product-info">{{product.description}}</div>
+          </div>
+          <span>{{product.name}}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

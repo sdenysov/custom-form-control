@@ -1,0 +1,14 @@
+@import "utils/colors";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $color-main-bg;
+}
+
+.container {
+  width: 80rem;
+  margin-top: 1.5rem;
+}
